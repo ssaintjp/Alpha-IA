@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpha IA</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="gradient-text #1a1a1a, #a25aff, #0056fe">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header id="header">
+        
+        <div class="container">
+            <div class="logo">
+               <a href="#inicio"> <img src="images/Alpha.png" alt="Alpha IA" ></a>
+            </div>
+            <nav>
+                <div class="menu-mobile" id="menu-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="menu">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#cases">Cases</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li class="mobile-only">Ctt<a href="#contato" class="btn-contato-mobile">Contato</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-btn">
+                <a href="#contato" class="btn btn-contato">Contato</a>
+            </div>
+        </div>
+    </header>
+
+  
+
+    <!-- Seção Hero -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            
+            <div class="logos-parceiros">
+                <img src="images/logoOpenIA.png" alt="OpenAI" class="logo-parceiro">
+                <img src="images/DeepSeek_logo.png" alt="Deepseek" class="logo-parceiro">
+                <img src="images/meta.png" alt="Meta" class="logo-parceiro">
+                <img src="images/github.png" alt="GitHub" class="logo-parceiro">
+            </div>
+            <h1>A Alpha é a <span class="gradient-text">maior</span> empresa <br class="desktop-quebra"> de IA <br class="mobile-quebra"><span class="palavra-animada gradient-text">automatizada</span><br class="mobile-quebra"> do Brasil</h1>
+            <p class="subtitulo">Sistemas específicos, com tecnologia de ponta para impulsionar seu negócio.</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary">Saiba Mais</button>
+                <a class="btn btn-outline" href="#animation-frame">Fale com a IA</a>
+            </div>
+            
+        </div>
+        
+    </section>
+
+    <!-- Seção Sobre Nós -->
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <h2>Sobre Nós</h2>
+            <p class="intro-text">Somos uma equipe de inovadores apaixonados por tecnologia e soluções de IA.</p>
+            <div class="cards-container">
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Missão</h3>
+                    <p>Capacitar negócios com inteligência</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Visão</h3>
+                    <p>Ser referência em soluções inteligentes</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Valores</h3>
+                    <p>Ética, inovação e colaboração</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Produtos -->
+    <section id="produtos" class="produtos">
+        <div class="container">
+            <h2>Otimize seus processos com nossos <span class="gradient-text">produtos</span>.</h2>
+            <div class="produtos-grid">
+                <div class="produto-card">
+                    <div class="produto-icon">
+                        <img src="images/Educador.png" alt="Portal do Educador">
+                    </div>
+                    <h3>Portal do Educador</h3>
+                    <p>Ferramenta para auxiliar e facilitar processos educacionais.</p>
+                    <a href="#portal-educador" class="saiba-mais">Saiba Mais <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="produto-card">
+                    <div class="produto-icon">
+                        <img src="images/Gestão.png" alt="Portal da Gestão">
+                    </div>
+                    <h3>Portal da Gestão</h3>
+                    <p>Solução completa para gestão empresarial e tomada de decisões.</p>
+                    <a href="#portal-gestao" class="saiba-mais">Saiba Mais <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="produto-card">
+                    <div class="produto-icon">
+                        <img src="images/Educacional.png" alt="Portal da Gestão Educacional">
+                    </div>
+                    <h3>Portal da Gestão Educacional</h3>
+                    <p>Integração entre gestão administrativa e pedagógica.</p>
+                    <a href="#portal-gestao-educacional" class="saiba-mais">Saiba Mais <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="produto-card">
+                    <div class="produto-icon">
+                        <img src="images/SIGIS.png" alt="S.I.G.I.S">
+                    </div>
+                    <h3>S.I.G.I.S</h3>
+                    <p>Sistema Integrado de Gestão de Informações e Serviços.</p>
+                    <a href="#sigis" class="saiba-mais">Saiba Mais <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="produto-card">
+                    <div class="produto-icon">
+                        <img src="images/saúde.png" alt="SIMPLES">
+                    </div>
+                    <h3>SIMPLES</h3>
+                    <p>Sistema Integrado para Monitoramento e Planejamento Estratégico de Saúde.</p>
+                    <a href="#simples" class="saiba-mais">Saiba Mais <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="produto-card">
+                    <div class="produto-icon">
+                        <img src="images/Assistente.png" alt="Assistente Virtual">
+                    </div>
+                    <h3>Assistente Virtual</h3>
+                    <p>IA personalizada para atendimento e automação de processos.</p>
+                    <a href="#assistente-virtual" class="saiba-mais">Saiba Mais <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Cases de Sucesso -->
+    <section id="cases" class="cases">
+        <div class="container">
+            <h2>Conheça os nossos <span class="gradient-text">cases</span> de sucesso</h2>
+            <div class="carousel">
+                <div class="carousel-container">
+                    <div class="carousel-item">
+                        <div class="case-content">
+                            <div class="case-image">
+                                <img src="images/Alpha.png" alt="Portal do Educador">
+                            </div>
+                            <div class="case-text">
+                                <h3>Portal do Educador</h3>
+                                <p>Implementação bem-sucedida em rede de escolas, resultando em aumento de 30% na eficiência dos processos.</p>
+                                <button class="btn btn-outline play-video" data-video="video1">Assistir Vídeo</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="case-content">
+                            <div class="case-image">
+                                <img src="images/Alpha.png" alt="Portal da Gestão">
+                            </div>
+                            <div class="case-text">
+                                <h3>Portal da Gestão</h3>
+                                <p>Empresa do setor financeiro reduziu custos operacionais em 25% após implementação.</p>
+                                <button class="btn btn-outline play-video" data-video="video2">Assistir Vídeo</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="case-content">
+                            <div class="case-image">
+                                <img src="images/Alpha.png" alt="Assistente Virtual">
+                            </div>
+                            <div class="case-text">
+                                <h3>Assistente Virtual</h3>
+                                <p>Atendimento 24/7 resultou em aumento de 40% na satisfação dos clientes.</p>
+                                <button class="btn btn-outline play-video" data-video="video3">Assistir Vídeo</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="carousel-btn next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seções Detalhadas de Cada Produto -->
+    <section id="portal-educador" class="produto-detalhe">
+        <div class="container">
+            <div class="produto-detalhe-content">
+                <div class="produto-detalhe-text">
+                    <h3>Portal do Educador</h3>
+                    <p>O Portal do Educador é uma ferramenta desenvolvida para o âmbito escolar, especialmente para gestores e professores, pensada para auxiliar e facilitar os processos educacionais. Com interface intuitiva e recursos avançados de IA, permite automatizar tarefas administrativas, personalizar planos de aula e acompanhar o desempenho dos alunos em tempo real.</p>
+                </div>
+                <div class="produto-detalhe-video">
+                    <div class="video-placeholder">
+                        <img src="images/Educador.png" alt="Portal do Educador">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portal-gestao-educacional" class="produto-detalhe">
+        <div class="container">
+            <div class="produto-detalhe-content reverse">
+                <div class="produto-detalhe-video">
+                    <div class="video-placeholder">
+                        <img src="images/Educador.png" alt="Portal da Gestão Educacional">
+                    </div>
+                </div>
+                <div class="produto-detalhe-text">
+                    <h3>Portal da Gestão Educacional</h3>
+                    <p>O Portal da Gestão Educacional integra aspectos administrativos e pedagógicos em uma única plataforma. Ideal para instituições de ensino de todos os portes, permite gerenciar matrículas, financeiro, corpo docente e acompanhamento pedagógico com recursos avançados de IA para identificar tendências e oportunidades de melhoria.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portal-gestao" class="produto-detalhe">
+        <div class="container">
+            <div class="produto-detalhe-content">
+                <div class="produto-detalhe-text">
+                    <h3>Portal da Gestão</h3>
+                    <p>O Portal da Gestão é uma solução completa para empresas que buscam otimizar seus processos administrativos e estratégicos. Com dashboards personalizados, análise preditiva e automação de relatórios, permite que gestores tomem decisões baseadas em dados concretos e em tempo real, aumentando a eficiência operacional e reduzindo custos.</p>
+                </div>
+                <div class="produto-detalhe-video">
+                    <div class="video-placeholder">
+                        <img src="images/Gestão.png" alt="Portal da Gestão">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="simples" class="produto-detalhe">
+        <div class="container">
+            <div class="produto-detalhe-content reverse">
+                <div class="produto-detalhe-video">
+                    <div class="video-placeholder">
+                        <img src="images/saúde.png" alt="SIMPLES">
+                    </div>
+                </div>
+                <div class="produto-detalhe-text">
+                    <h3>SIMPLES</h3>
+                    <p>O Sistema Integrado para Monitoramento e Planejamento Estratégico de Saúde (SIMPLES) foi desenvolvido especificamente para o setor de saúde. Com recursos de IA para análise epidemiológica, gestão de recursos hospitalares e acompanhamento de pacientes, permite que instituições de saúde otimizem seus processos e melhorem a qualidade do atendimento.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sigis" class="produto-detalhe">
+        <div class="container">
+            <div class="produto-detalhe-content">
+                <div class="produto-detalhe-text">
+                    <h3>S.I.G.I.S</h3>
+                    <p>O Sistema Integrado de Gestão de Informações e Serviços (S.I.G.I.S) é uma plataforma robusta para organizações que necessitam centralizar e gerenciar grandes volumes de dados e serviços. Com recursos avançados de segurança e escalabilidade, permite integração com sistemas legados e oferece análises avançadas para otimização de processos.</p>
+                </div>
+                <div class="produto-detalhe-video">
+                    <div class="video-placeholder">
+                        <img src="images/SIGIS.png" alt="S.I.G.I.S">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="assistente-virtual" class="produto-detalhe">
+        <div class="container">
+            <div class="produto-detalhe-content reverse">
+                <div class="produto-detalhe-video">
+                    <div class="video-placeholder">
+                        <img src="images/Assistente.png" alt="Assistente Virtual">
+                    </div>
+                </div>
+                <div class="produto-detalhe-text">
+                    <h3>Assistente Virtual</h3>
+                    <p>Nosso Assistente Virtual é uma solução de IA personalizada que pode ser adaptada para diversos setores e necessidades. Disponível 24/7, automatiza tarefas repetitivas, oferece atendimento ao cliente, gera insights a partir de dados e muito mais, permitindo que sua equipe foque em atividades estratégicas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Crie seu próprio assistente virtual -->
+    <section id="assistente" class="assistente-virtual">
+        <div class="container">
+            <h2>Crie seu <span class="gradient-text">próprio</span> assistente virtual</h2>
+            <div class="assistente-content">
+                <div class="assistente-text">
+                    <p>Crie seu próprio assistente virtual, 24/7, personalizado, através de IA sob medida que automatizam tarefas, otimizam processos e liberam sua equipe para o foco estratégico.</p> <p>Tenha acesso a IA de ponta para insights, decisões assertivas e vantagem competitiva duradoura.</p>
+                    <button id="Ass" class="btn btn-primary pulse" onclick="window.open('https://wa.me/559831962178?text=Oi%2C%20Lia!%20Do%20que%20voc%C3%AA%20%C3%A9%20capaz%3F')">Solicitar Demonstração</button>
+                </div>
+                <div class="assistente-image">
+                    
+    <iframe id="animation-frame"
+        src="Animations/Animation.html"
+        frameborder="0"
+        scrolling="no">
+    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Atendimento Ininterrupto -->
+    <section id="atendimento" class="atendimento">
+        <div class="container">
+            <div class="atendimento-content">
+                <div class="atendimento-icon">
+                    <i class="fas fa-clock bounce"></i>
+                </div>
+                <h2>Atendimento Ininterrupto</h2>
+                <p>Nosso assistente virtual funciona 24/7, automatizando tarefas, otimizando processos e garantindo que sua equipe foque apenas no estratégico.</p>
+            </div>
+        </div>
+    </section>
+
+     <section id="personalizado" class="personalizado">
+        <div class="container">
+            <h2>Deseja um atendimento <span class="gradient-text">personalizado?</span></h2>
+            <p>Estamos aqui para ajudar! Se sua demanda está além de nossos produtos padrões, <br> necessitando de uma ferramenta específica para seu empreeendimento, <br>  em contato conosco através dos seguintes canais</p>
+            <ul class="contato-lista">
+                <li><i class="fas fa-envelope"></i> E-mail:
+    </section>
+
+    <!-- Seção FAQ -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2>FAQ</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-pergunta">
+                        <h3>Como funciona a integração de IA?</h3>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-resposta">
+                        <p>Avaliamos seus dados, definimos modelos de ML/IA e entregamos APIs para consumo nos seus sistemas atuais.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-pergunta">
+                        <h3>Quais são os prazos de entrega?</h3>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-resposta">
+                        <p>Projetos simples: 2–4 semanas; soluções mais complexas: 8–12 semanas, conforme escopo.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-pergunta">
+                        <h3>Vocês oferecem suporte pós-implementação?</h3>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-resposta">
+                        <p>Sim, com planos de manutenção e monitoramento para garantir alta disponibilidade e performance.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-pergunta">
+                        <h3>Como garantir a segurança dos dados?</h3>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-resposta">
+                        <p>Utilizamos protocolos de criptografia avançados e seguimos as melhores práticas de segurança da informação, garantindo total conformidade com a LGPD.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-pergunta">
+                        <h3>É possível personalizar as soluções?</h3>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-resposta">
+                        <p>Sim, todas as nossas soluções são altamente personalizáveis e adaptadas às necessidades específicas de cada cliente e setor.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato" class="contato">
+        <div class="container">
+            <h2>Mande sua <span class="gradient-text">dúvida</span></h2>
+            <form id="contato-form">
+                <div class="form-group">
+                    <input type="text" name="nome" placeholder="Nome" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="E-mail" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="assunto" placeholder="Assunto">
+                </div>
+                <div class="form-group">
+                    <textarea name="mensagem" placeholder="Mensagem"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+            </form>
+        </div>
+    </section>
+
+   
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navegação</h4>
+                        <ul>
+                            <li><a href="#inicio">Início</a></li>
+                            <li><a href="#sobre">Sobre Nós</a></li>
+                            <li><a href="#produtos">Produtos</a></li>
+                            <li><a href="#cases">Cases</a></li>
+                            <li><a href="#faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Redes Sociais</h4>
+                        <ul>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Contatos</h4>
+                        <ul>
+                            <li><a href="mailto:contato@alphaia.com.br">E-mail: contato@alphaia.com.br</a></li>
+                            <li>Telefone: (98) 9 8920-3822</li>
+                            <li>Localização: São Luís, MA – Brasil</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <p>&copy; 2025 Alpha IA LTDA. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chat Flutuante -->
+    <div id="chat-icon">
+        <span class="gradient-text">Atendimento Alpha</span>
+        <i class="fas fa-comment-dots"></i>
+    </div>
+    <div id="chat-popup">
+        <div id="chat-header">
+            <h4>Atendimento Alpha</h4>
+            <button id="close-chat"><i class="fas fa-times"></i></button>
+        </div>
+        <div id="chat-messages">
+            <div class="chat-message bot">
+                <p>Olá! Como posso ajudar você hoje?</p>
+            </div>
+        </div>
+        <div id="chat-input">
+            <input type="text" placeholder="Digite sua mensagem...">
+            <button><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <!-- Modal para vídeos -->
+    <div id="video-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-video-container">
+                <iframe id="modal-video" src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <div id="confetti-container"></div>
+    <script src="js/script.js"></script>
+</body>
+</html>
