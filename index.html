@@ -12,6 +12,7 @@
     <meta name="theme-color" content="gradient-text #1a1a1a, #a25aff, #0056fe">
 </head>
 <body>
+    <div class="custom-cursor"></div>
     <!-- Cabeçalho -->
     <header id="header">
         
@@ -156,47 +157,64 @@
     <section id="cases" class="cases">
         <div class="container">
             <h2>Conheça os nossos <span class="gradient-text">cases</span> de sucesso</h2>
-            <div class="carousel">
-                <div class="carousel-container">
-                    <div class="carousel-item">
-                        <div class="case-content">
-                            <div class="case-image">
-                                <img src="images/Alpha.png" alt="Portal do Educador">
-                            </div>
-                            <div class="case-text">
-                                <h3>Portal do Educador</h3>
-                                <p>Implementação bem-sucedida em rede de escolas, resultando em aumento de 30% na eficiência dos processos.</p>
-                                <button class="btn btn-outline play-video" data-video="video1">Assistir Vídeo</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="case-content">
-                            <div class="case-image">
-                                <img src="images/Alpha.png" alt="Portal da Gestão">
-                            </div>
-                            <div class="case-text">
-                                <h3>Portal da Gestão</h3>
-                                <p>Empresa do setor financeiro reduziu custos operacionais em 25% após implementação.</p>
-                                <button class="btn btn-outline play-video" data-video="video2">Assistir Vídeo</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="case-content">
-                            <div class="case-image">
-                                <img src="images/Alpha.png" alt="Assistente Virtual">
-                            </div>
-                            <div class="case-text">
-                                <h3>Assistente Virtual</h3>
-                                <p>Atendimento 24/7 resultou em aumento de 40% na satisfação dos clientes.</p>
-                                <button class="btn btn-outline play-video" data-video="video3">Assistir Vídeo</button>
-                            </div>
+            <div class="stacked-cards">
+                <div class="stacked-card card-blue">
+                    <div class="card-content">
+                        <h3>Portal do Educador</h3>
+                        <p>Eficiência aumentada em 30% em redes de ensino através de automação inteligente.</p>
+                        <div class="card-footer">
+                            <button class="btn-play play-video" data-video="video1"><i class="fas fa-play"></i></button>
                         </div>
                     </div>
                 </div>
-                <button class="carousel-btn prev"><i class="fas fa-chevron-left"></i></button>
-                <button class="carousel-btn next"><i class="fas fa-chevron-right"></i></button>
+                <div class="stacked-card card-purple">
+                    <div class="card-content">
+                        <h3>Portal da Gestão</h3>
+                        <p>Redução de 25% nos custos operacionais com dashboards de análise preditiva.</p>
+                        <div class="card-footer">
+                            <button class="btn-play play-video" data-video="video2"><i class="fas fa-play"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="stacked-card card-black">
+                    <div class="card-content">
+                        <h3>Portal da Gestão Educacional</h3>
+                        <p>Integração total entre administrativo e pedagógico para instituições de ensino.</p>
+                        <div class="card-footer">
+                            <button class="btn-play play-video" data-video="video3"><i class="fas fa-play"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="stacked-card card-white">
+                    <div class="card-content">
+                        <h3>S.I.G.I.S</h3>
+                        <p>Gestão centralizada de grandes volumes de dados com máxima segurança e escala.</p>
+                        <div class="card-footer">
+                            <button class="btn-play play-video" data-video="video1"><i class="fas fa-play"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="stacked-card card-blue">
+                    <div class="card-content">
+                        <h3>SIMPLES</h3>
+                        <p>Otimização de processos hospitalares e planejamento estratégico em saúde.</p>
+                        <div class="card-footer">
+                            <button class="btn-play play-video" data-video="video2"><i class="fas fa-play"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="stacked-card card-purple">
+                    <div class="card-content">
+                        <h3>Assistente Virtual</h3>
+                        <p>Aumento de 40% na satisfação do cliente com atendimento inteligente 24/7.</p>
+                        <div class="card-footer">
+                            <button class="btn-play play-video" data-video="video3"><i class="fas fa-play"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-progress-container">
+                <div class="scroll-progress-bar"></div>
             </div>
         </div>
     </section>

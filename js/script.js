@@ -44,32 +44,7 @@ function toggleMenu() {
     document.body.classList.toggle('menu-open');
 }
 // Carousel de cases
-let currentSlide = 0;
-const slides = document.querySelectorAll('.carousel-item');
-const totalSlides = slides.length;
 
-function showSlide(index) {
-    if (index < 0) {
-        currentSlide = totalSlides - 1;
-    } else if (index >= totalSlides) {
-        currentSlide = 0;
-    } else {
-        currentSlide = index;
-    }
-    
-    const container = document.querySelector('.carousel-container');
-    if (container) {
-        container.style.transform = `translateX(-${currentSlide * 100}%)`;
-    }
-}
-
-function nextSlide() {
-    showSlide(currentSlide + 1);
-}
-
-function prevSlide() {
-    showSlide(currentSlide - 1);
-}
 
 // FAQ Acordeão
 function toggleFaq(item) {
@@ -223,17 +198,7 @@ document.addEventListener('DOMContentLoaded', () => {
         menuMobile.addEventListener('click', toggleMenu);
     }
     
-    // Carousel
-    const nextButton = document.querySelector('.carousel-btn.next');
-    const prevButton = document.querySelector('.carousel-btn.prev');
-    
-    if (nextButton) {
-        nextButton.addEventListener('click', nextSlide);
-    }
-    
-    if (prevButton) {
-        prevButton.addEventListener('click', prevSlide);
-    }
+
     
     // FAQ
     const faqItems = document.querySelectorAll('.faq-item');
@@ -348,6 +313,40 @@ document.addEventListener('DOMContentLoaded', () => {
     
     const button = document.querySelector('.btn-primary');
     button.addEventListener('click', createConfetti);
+
+    // Custom Cursor Logic
+    const cursor = document.querySelector('.custom-cursor');
+    
+    document.addEventListener('mousemove', (e) => {
+        cursor.style.left = e.clientX + 'px';
+        cursor.style.top = e.clientY + 'px';
+    });
+
+    // Cursor hover effects
+    const interactiveElements = document.querySelectorAll('a, button, .btn, .faq-pergunta, #chat-icon, .carousel-btn, .menu-mobile, .stacked-card, .btn-play');
+    interactiveElements.forEach(el => {
+        el.addEventListener('mouseenter', () => {
+            cursor.style.transform = 'translate(-50%, -50%) scale(2.5)';
+            cursor.style.backgroundColor = 'white';
+        });
+        el.addEventListener('mouseleave', () => {
+            cursor.style.transform = 'translate(-50%, -50%) scale(1)';
+            cursor.style.backgroundColor = 'white';
+        });
+    });
+
+    // Scroll Progress for stacked-cards
+    const stackedCards = document.querySelector('.stacked-cards');
+    const progressBar = document.querySelector('.scroll-progress-bar');
+
+    if (stackedCards && progressBar) {
+        stackedCards.addEventListener('scroll', () => {
+            const scrollLeft = stackedCards.scrollLeft;
+            const scrollWidth = stackedCards.scrollWidth - stackedCards.clientWidth;
+            const progress = (scrollLeft / scrollWidth) * 100;
+            progressBar.style.width = progress + '%';
+        });
+    }
 });
 
 window.addEventListener('scroll', function() {
